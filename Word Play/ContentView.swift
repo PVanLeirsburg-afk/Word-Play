@@ -13,12 +13,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Text("Pam")
-            Text("It is Tuesday")
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            
         }
         .padding()
     }
@@ -26,4 +21,25 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+struct Words {
+    var adjective = ""
+    var personsName = ""
+    var country = ""
+    var kingdomName = ""
+    var pluralNoun = ""
+    var verb = ""
+    var pluralVerb = ""
+    var color = ""
+}
+
+struct CustomTextField:  View {
+    let placeholder : String
+    let variable : Binding<String>
+    var body: some View {
+        TextField(placeholder, text: variable)
+            .textFieldStyle(RoundedBorderTextFieldStyle())
+            .autocapitalization(.none)
+    }
 }
