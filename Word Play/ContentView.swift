@@ -18,20 +18,24 @@ struct ContentView: View {
                 Text("Please enter the requested words below")
                 HStack {
                     CustomTextField(placeholder: "Adjective", variable:$words.adjective)
-                    CustomTextField(placeholder: "Person's Name", variable: $words.personsName)
                     CustomTextField(placeholder: "Country", variable:$words.country)
                 }
             
                 HStack {
                     CustomTextField(placeholder: "Kingdom Name", variable: $words.kingdomName)
                     CustomTextField(placeholder: "Plural Noun", variable:$words.pluralNoun)
-                    CustomTextField(placeholder: "verb", variable: $words.verb)
+                    
                 }
                 
                 HStack {
                     CustomTextField(placeholder: "Plural Verb", variable:$words.pluralVerb)
                     CustomTextField(placeholder: "Color", variable: $words.color)
+                }
+                
+                HStack {
                     CustomTextField(placeholder: "Noun", variable: $words.noun)
+                    CustomTextField(placeholder: "verb", variable: $words.verb)
+                    CustomTextField(placeholder: "Name", variable: $words.personsName)
                 }
                 Spacer()
                 NavigationLink("Next", destination:StoryView(words: words))
