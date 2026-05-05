@@ -14,10 +14,9 @@ struct StoryView: View {
         Text(writeStory())
        
     }
-}
-
-func writeStory() -> String {
-    return "Once upon a time, there was a \(words.adjective) princess named " + "\(words.personsName). She was from \(words.country) and she lived in a" +
+    func writeStory() -> String {
+        return "Once upon a time, there was a \(words.adjective) princess " +
+        "named \(words.personsName). She was from \(words.country) and she lived in a" +
         " beautiful kingdom on the hills called \(words.kingdomName). She had " +
         "five \(words.pluralNoun). While she was \(words.verb) the horse she fell" +
         " off of the horse and her dress had a \(words.color) stain on it. When " +
@@ -28,7 +27,10 @@ func writeStory() -> String {
         " supermarket when she ran into a prince. They fell in love and got married " +
         "and had three children and they lived happily ever after."
 
+    }
 }
+
+
 #Preview {
     StoryView()
 }
