@@ -31,11 +31,13 @@ struct ContentView: View {
                 HStack {
                     CustomTextField(placeholder: "Plural Verb", variable:$words.pluralVerb)
                     CustomTextField(placeholder: "Color", variable: $words.color)
+                    CustomTextField(placeholder: "Noun", variable: $words.noun)
                 }
                 Spacer()
                 NavigationLink("Next", destination:StoryView(words: words))
             }
         }
+        .navigationTitle("Word Play")
     }
 }
 
@@ -52,6 +54,7 @@ struct Words {
     var verb = ""
     var pluralVerb = ""
     var color = ""
+    var noun = ""
 }
 
 struct CustomTextField:  View {
