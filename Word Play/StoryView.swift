@@ -32,5 +32,5 @@ struct StoryView: View {
 
 
 #Preview {
-    StoryView()
+    StoryView(words: Words())
 }
