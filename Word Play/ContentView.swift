@@ -15,8 +15,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                Text("Please enter the requested words below")
+                Text("Please fffffenter the requested words below")
                 HStack {
+                    Text("This is a test for Mrs. VL")
                     CustomTextField(placeholder: "Adjective", variable:$words.adjective)
                     CustomTextField(placeholder: "Country", variable:$words.country)
                 }
